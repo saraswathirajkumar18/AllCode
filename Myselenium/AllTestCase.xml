@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Orangehrm login">
+<test name="login testcase">
+<classes>
+<class name="dataDrivenProject.InValidUser"></class>
+<class name="dataDrivenProject.InValidPassword"></class>
+<class name="dataDrivenProject.InValidNamePassword"></class>
+<class name="dataDrivenProject.ValidNamePassword"></class>
+</classes>
+</test>
+</suite>

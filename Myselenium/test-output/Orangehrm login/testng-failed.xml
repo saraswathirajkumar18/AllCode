@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Orangehrm login]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="login testcase(failed)">
+    <classes>
+      <class name="dataDrivenProject.InValidUser">
+        <methods>
+          <include name="validUser"/>
+        </methods>
+      </class> <!-- dataDrivenProject.InValidUser -->
+      <class name="dataDrivenProject.InValidPassword">
+        <methods>
+          <include name="invalidPassword"/>
+        </methods>
+      </class> <!-- dataDrivenProject.InValidPassword -->
+      <class name="dataDrivenProject.InValidNamePassword">
+        <methods>
+          <include name="invalidNamePassword"/>
+        </methods>
+      </class> <!-- dataDrivenProject.InValidNamePassword -->
+      <class name="dataDrivenProject.ValidNamePassword">
+        <methods>
+          <include name="validNamePassword"/>
+        </methods>
+      </class> <!-- dataDrivenProject.ValidNamePassword -->
+    </classes>
+  </test> <!-- login testcase(failed) -->
+</suite> <!-- Failed suite [Orangehrm login] -->

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="login">
+
+<test name="InvalidUserTestcase">
+<parameter name="user" value="Admin1"></parameter>
+<parameter name="password" value="admin123"></parameter>
+<classes>
+<class name="dataDrivenProject.ParameterInVaildUser"></class>
+</classes>
+</test>
+<test name="InvalidPasswordTestcase">
+<parameter name="user" value="Admin"></parameter>
+<parameter name="password" value="admin1234"></parameter>
+<classes>
+<class name="dataDrivenProject.ParameterInvalidPassword"></class>
+</classes>
+</test>
+<test name="InvalidBothTestcase">
+<parameter name="user" value="Admin1"></parameter>
+<parameter name="password" value="admin1234"></parameter>
+<classes>
+<class name="dataDrivenProject.ParameterInValidDetails"></class>
+</classes>
+</test>
+<test name="ValidBothTestcase">
+<parameter name="user" value="Admin"></parameter>
+<parameter name="password" value="admin123"></parameter>
+<classes>
+<class name="dataDrivenProject.ParameterValidDetails"></class>
+</classes>
+</test>
+</suite>

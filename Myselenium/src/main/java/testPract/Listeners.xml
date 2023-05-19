@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="listentestcase">
+<listeners>
+<listener class-name="testPract.listernersExample"></listener> 
+</listeners>
+<test name="actionslisteners">
+<classes>
+<class name="testPract.DriveCar"></class>
+</classes>
+</test>
+</suite>

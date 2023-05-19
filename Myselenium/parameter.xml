@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Input-Parameter">
+<test name="pass input">
+<parameter name="FirstName" value="Duck Duck Go"></parameter>
+<parameter name="LastName" value="Browny"></parameter>
+<classes>
+<class name="testPract.ParameterInput"></class>
+</classes>
+</test>
+</suite>
